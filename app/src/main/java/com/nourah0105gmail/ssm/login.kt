@@ -11,8 +11,8 @@ class login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-        //for button guest to move to another actvity
 
+        //for button sign up to move to another actvity
         signup_button.setOnClickListener {
             val i = Intent(this@login, signup::class.java)
             startActivity(i)

@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".login" />
-        <activity android:name=".signup"></activity>
+        <activity android:name=".signup" />
+        <activity android:name=".DOB" />
+        <activity android:name=".profile"></activity>
     </application>
 
 </manifest>
