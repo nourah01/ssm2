@@ -4,21 +4,20 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
 import android.content.Intent
+import kotlinx.android.synthetic.main.activity_login.*
 
-
-
-class MainActivity : AppCompatActivity() {
+class login : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_login)
+        //for button guest to move to another actvity
 
-//for button guest to move to another actvity
-        guest_button.setOnClickListener {
-            val i = Intent(this@MainActivity, login::class.java)
+        signup_button.setOnClickListener {
+            val i = Intent(this@login, signup::class.java)
             startActivity(i)
             finish()
         }
-
     }
+
 }
